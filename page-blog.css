@@ -89,8 +89,12 @@ body{
 /*顶部导航栏右侧设计结束*/
 
 /*banner设计开始*/
+.banner1{
+	margin-left: -375px;
+}
 .banner2{
 	position: absolute;
+	/* margin-left: -100px; */
 }
 
 /*banner设计结束*/
