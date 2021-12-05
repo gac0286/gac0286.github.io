@@ -331,3 +331,34 @@ td input{
 .yijian input{
 	width: 500px;
 }
+
+/* calculator */
+#head{
+	font-family:微软雅黑;
+	font-size: 35px;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#show input{
+	width:511px;
+	height:60px;
+	font-size:30px;
+	/* margin-bottom: 20px; */
+}
+
+#cuttom table{
+	margin-left: 238px;
+	margin-top: 10px;
+}
+#cuttom input{
+	width: 75px;
+	height: 70px;
+	font-size: 28px;
+	margin: 5px;
+}
+#cuttom input:hover{
+	background: lightgray;
+}

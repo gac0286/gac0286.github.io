@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="page-blog.css" />
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				var send=document.getElementById("send");
+				send.onclick=function(){
+					var xingming=document.getElementById("xingming");
+					var tel=document.getElementById("tel");
+					var textare=document.getElementById("textare");
+					//string url = "file:///C:/Users/86138/Desktop/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/blog/%E6%84%8F%E8%A7%81.html";
+				}
+			}
+            function $(id){return document.getElementById(id);}
+            var str;
+            var result;
+            function display(str0)	//显示到文本框
+            {
+                str = document.getElementById("text");
+                str.value = str.value + str0;
+            }
+            function equals()	//等于
+            {
+                str = document.getElementById("text");
+                result = eval(str.value);
+                str.value = result;
+            }
+            function back()		//退格
+            {
+                str = document.getElementById("text");
+                str.value = str.value.substring(0,str.value.length-1);
+            }
+            function reset()	//清除
+            {
+                str = document.getElementById("text");
+                str.value = "";
+            }
+		</script>
+		
+		
+	</head>
+	<body>
+		<div class="all">
+			<div class="t"></div>
+			<div class="t"></div>
+		<!--header开始-->
+		
+		<div class="top ">
+			<div  class=" head">
+				<img src="top.png" />
+				Katherine|个人博客 
+			</div>
+		<div>
+			<div>
+				<ul class="nav">
+					<li><a href="https://gac0286.github.io/index.html"><img src="shouye.png" />&nbsp;首页</a></li>
+					<li><a href="https://gac0286.github.io/showac.html"><img src="guanyu.png" />&nbsp;详情</a></li>
+					<li><a href="https://gac0286.github.io/form.html"><img src="gengduo.png" />&nbsp;表单</a></li>     
+					<li><a href="https://gac0286.github.io/calculator.html"><img src="wode.png" />&nbsp;计算器</a></li>     
+				</ul>
+			</div>
+		</div>
+		
+		</div>
+		<!--header结束-->
+		
+		<div id="calculator">
+			<div style="text-align: center;" id="head"><h3>网页版简单计算器</h3></div>
+			
+			<div id="show" style="text-align: center;"><input type="text" id="text" ></div>
+			<div id="cuttom">
+				<table style="text-align: center;">
+					<tr>
+						<td><input type="button" value="7" onclick="display(7)"></td>
+						<td><input type="button" value="8" onclick="display(8)"></td>
+						<td><input type="button" value="9" onclick="display(9)"></td>
+						<td><input type="button" value="+" onclick="display('+')"></td>
+						<td><input type="button" value="-" onclick="display('-')"></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="4" onclick="display(4)"></td>
+						<td><input type="button" value="5" onclick="display(5)"></td>
+						<td><input type="button" value="6" onclick="display(6)"></td>
+						<td><input type="button" value="*" onclick="display('*')"></td>
+						<td><input type="button" value="/" onclick="display('/')"></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="1" onclick="display(1)"></td>
+						<td><input type="button" value="2" onclick="display(2)"></td>
+						<td><input type="button" value="3" onclick="display(3)"></td>
+						<td><input type="button" value="(" onclick="display('(')"></td>
+						<td><input type="button" value=")" onclick="display(')')"></td>
+					</tr>
+					<tr>
+						<td><input type="button" value="." onclick="display('.')"></td>
+						<td><input type="button" value="0" onclick="display(0)"></td>
+						<td><input type="button" value="←" onclick="back()"></td>
+						<td><input type="button" value="c" onclick="reset()"></td>
+						<td><input type="button" value="=" onclick="equals()"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	    
+	    <!--其他水果-->
+	    <div class="otherfruit clearfix">
+	    	<p>&nbsp;&nbsp;其他水果</p>
+	    	<ul>
+	    		<li><a href="http://www.baidu.com/link?url=wI5M30w7QyFGNoI-kUh9mU9IRvWqmf7SMDa4jZdzHCanroaEX6GroGP148sew_3SkA2pORYhwY07lPOOv9au6TH150xy5yYyfQMH9FcxlCO&wd=&eqid=b60584390000345e000000056072aff0"><img src="banana.png"></a></li>
+	    		<li><a href="http://www.baidu.com/link?url=YZ1KTPkPcDw8qsqZ0iOPlMmYxw-vVLJTHA3nTxPsk2ArBARYLMVrT24qpzGHblRw8p5xub5IVfxm1q8e1pPCOtPeARkEstMbM2ijqGMI9Ym&wd=&eqid=f0139b930000181a000000056072b005"><img src="blueberry.png"></a></li>
+	    		<li><a href="http://www.baidu.com/link?url=FexEBn1DrbeVy7FD9F6eVYLuT4hLwva7tSXzl1t-41FFLXWxtfqdeNfSnYXvD0lPHcvgNWnoPoiTOOzqbOOvbHM_nhh_Co-nT3NSjaE3JSKTGd1T5Oid-RX6TPjobIlX&wd=&eqid=c2f548e8000014f2000000056072b03c"><img src="kiwi.png"></a></li>
+	    		<li><a href="http://www.baidu.com/link?url=gvkh60nBlgKJNWAcrsVbITQYw34P7dOF5JRop8KOS6ep3orWdRy-CmeEWS23bs727rWBbP1fXrIBW1B2-5B1c78jEVtz-8hqcxXOi_bT6LW&wd=&eqid=e5efaafe00007106000000056072b04a"><img src="strawberry.png"></a></li>
+	    		<li><a href="http://www.baidu.com/link?url=ZLWoJGWmBDnKWHQ_XFN2v549-g8DAbxXhHiZzYJJwMGo5btaTUVclqdd66lrQ0Tpgg_hBrgrXlMnk3vpERPtRYpW6D_cUXztGImE0M_jT1m&wd=&eqid=8105995d000024d5000000056072b059"><img src="cherry.png"></a></li>
+	    		<li><a href="http://www.baidu.com/link?url=5niMsVMkzuftsWVaU9aT8SL0i11-u_JCu_SS_-hdiTbmVk-AjIBCJn28iWwq_f647lN0iY9bX9BS50h44L3EseVajxtHlOL1eCHajPjSIlS&wd=&eqid=f4053e3100006e37000000056072b06a"><img src="watermelon.png"></a></li>
+	    	</ul>
+	    </div>
+	    <!--其他水果-->
+	    
+	    <!--底部设计开始-->
+	     <div class="bottom">
+	     	<p>
+	     		<a href="#">百度网</a> |
+            	<a href="#">新浪网</a> |
+            	<a href="#">腾迅房产</a> |
+            	<a href="#">找货网</a> |
+   		    	<a href="#">北极绒</a> |
+   		    	<a href="#">阿里巴巴</a>
+	     	</p>
+	     	<p><a href="#">返回顶部</a></p>
+	     	<p>©Copyright 2020 guanaicheng所有</p>
+	     </div>
+	    <!--底部设计结束-->
+	    </div>
+	</body>
+</html>
