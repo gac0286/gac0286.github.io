@@ -300,6 +300,10 @@ table {
 
 
 /*form.html的shoujibiao样式设计*/
+.shoujibiao{
+	width: 1000px;
+	height: auto;
+}
 .name111{
 	padding-left: 50px;
 	width: 150px;
