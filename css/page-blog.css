@@ -307,26 +307,30 @@ table {
 }
 .tel111{
 	width: 200px;
+	height: 30px;
 	text-align: center;
 }
 .yijian{
 	width: 500px;
+	height: 30px;
 	text-align: center;
 }
 .shanchu,.tianjia{
-	float: right;
 	width: 50px;
+	height: 30px;
 	text-align: center;
 }
 td input{
 	width: inherit;
+	height: 30px;
 	height: inherit;
 }
 .yijian input{
 	width: 500px;
+	height: 30px;
 }
 
-/* calculator */
+/* calculator.html*/
 #head{
 	font-family:微软雅黑;
 	font-size: 35px;
