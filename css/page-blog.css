@@ -303,6 +303,7 @@ table {
 .name111{
 	padding-left: 50px;
 	width: 150px;
+	height: 30px;
 	text-align: center;
 }
 .tel111{
@@ -323,7 +324,6 @@ table {
 td input{
 	width: inherit;
 	height: 30px;
-	height: inherit;
 }
 .yijian input{
 	width: 500px;
