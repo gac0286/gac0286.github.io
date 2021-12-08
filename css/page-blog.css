@@ -371,10 +371,9 @@ td input{
 	color: chocolate;
 	width: 55px;
 	height: 20px;
-	border:solid grey 3px;
 }
 #login111{
-	border-color: cornsilk;
+	color: cornsilk;
 }
 #login111 h1{
 	font-size: 20px;
@@ -386,4 +385,5 @@ td input{
 	height: 500px;
 	width: 500px;
 	text-align: center;
+	padding-top: 300px;
 }
