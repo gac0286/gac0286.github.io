@@ -377,13 +377,15 @@ td input{
 }
 #login111 h1{
 	font-size: 20px;
+	text-align: center;
 }
 #login111 h2{
 	font-size: 16px;
+	text-align: center;
 }
 #login111 {
 	height: 500px;
-	width: 200px;
+	width: 100px;
 	text-align: center;
 	padding-top: 50px;
 }
