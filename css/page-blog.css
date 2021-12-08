@@ -372,9 +372,6 @@ td input{
 	width: 55px;
 	height: 20px;
 }
-#login111{
-	color: grey;
-}
 #login111 h1{
 	font-size: 20px;
 	text-align: center;
@@ -388,4 +385,12 @@ td input{
 	width: 100px;
 	text-align: center;
 	padding-top: 50px;
+	color: grey;
+}
+#log111 div{
+	text-align: center;
+}
+#login111 input{
+	width: 150px;
+	height: 30px;
 }
