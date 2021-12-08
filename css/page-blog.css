@@ -363,3 +363,11 @@ td input{
 #cuttom input:hover{
 	background: lightgray;
 }
+
+/* login.html */
+#login{
+	background-color: beige;
+	color: chocolate;
+	width: 40px;
+	height: 30px;
+}
