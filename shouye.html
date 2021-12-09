@@ -2,11 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>计算器~</title>
+		<title>首页~</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/page-blog.css" />
 		
-		<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
 		<script type="text/javascript">
 			window.onload=function(){
 				var send=document.getElementById("send");
@@ -17,30 +16,6 @@
 					//string url = "file:///C:/Users/86138/Desktop/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/blog/%E6%84%8F%E8%A7%81.html";
 				}
 			}
-            function $(id){return document.getElementById(id);}
-            var str;
-            var result;
-            function display(str0)	//显示到文本框
-            {
-                str = document.getElementById("text");
-                str.value = str.value + str0;
-            }
-            function equals()	//等于
-            {
-                str = document.getElementById("text");
-                result = eval(str.value);
-                str.value = result;
-            }
-            function back()		//退格
-            {
-                str = document.getElementById("text");
-                str.value = str.value.substring(0,str.value.length-1);
-            }
-            function reset()	//清除
-            {
-                str = document.getElementById("text");
-                str.value = "";
-            }
 		</script>
 		
 		
@@ -71,55 +46,70 @@
 		</div>
 		<!--header结束-->
 		
-		<div id="calculator"><ul class="nav">
-					<li><a href="https://gac0286.github.io/index.html"><img src="img/shouye.png" />&nbsp;首页</a></li>
-					<li><a href="https://gac0286.github.io/showac.html"><img src="img/guanyu.png" />&nbsp;详情</a></li>
-					<li><a href="https://gac0286.github.io/form.html"><img src="img/gengduo.png" />&nbsp;表单</a></li>     
-					<li><a href="https://gac0286.github.io/calculator.html"><img src="img/wode.png" />&nbsp;计算器</a></li>   
-                    <li id="login"><a href="https://gac0286.github.io/login.html">&nbsp;|登陆|</a></li>  
-				</ul>
-			<div style="text-align: center;" id="head"><h3>网页版简单计算器</h3></div>
-			
-			<div id="show" style="text-align: center;"><input type="text" id="text" ></div>
-			<div id="cuttom">
-				<table style="text-align: center;">
-					<tr>
-						<td><input type="button" value="7" onclick="display(7)"></td>
-						<td><input type="button" value="8" onclick="display(8)"></td>
-						<td><input type="button" value="9" onclick="display(9)"></td>
-						<td><input type="button" value="+" onclick="display('+')"></td>
-						<td><input type="button" value="-" onclick="display('-')"></td>
-					</tr>
-					<tr>
-						<td><input type="button" value="4" onclick="display(4)"></td>
-						<td><input type="button" value="5" onclick="display(5)"></td>
-						<td><input type="button" value="6" onclick="display(6)"></td>
-						<td><input type="button" value="*" onclick="display('*')"></td>
-						<td><input type="button" value="/" onclick="display('/')"></td>
-					</tr>
-					<tr>
-						<td><input type="button" value="1" onclick="display(1)"></td>
-						<td><input type="button" value="2" onclick="display(2)"></td>
-						<td><input type="button" value="3" onclick="display(3)"></td>
-						<td><input type="button" value="(" onclick="display('(')"></td>
-						<td><input type="button" value=")" onclick="display(')')"></td>
-					</tr>
-					<tr>
-						<td><input type="button" value="." onclick="display('.')"></td>
-						<td><input type="button" value="0" onclick="display(0)"></td>
-						<td><input type="button" value="←" onclick="back()"></td>
-						<td><input type="button" value="c" onclick="reset()"></td>
-						<td><input type="button" value="=" onclick="equals()"></td>
-					</tr>
-				</table>
-			</div>
+		<!--banner开始-->
+		<div class="banner">
+			<img src="img/banner.JPG" class="banner1"/>
+			<img src="img/banner.JPG" class="banner2"/>
 		</div>
-
+		<!--banner结束-->
+		<div class="t"></div>
+		
+	    
+	    <!--联系栏开始-->
+	    <div class="contact">
+	    	<div class="c1">
+				<br/>
+	    		<h2>我们的联系方式</h2>
+	    		<hr/>
+	    		<p class="p1">您可以通过以下方式联系我们</p>
+	    		<div class="lianxi">
+	    			<a href="#"><img src="img/qq.png"/></a>
+	    		    <a href="#"><img src="img/weixin.png"/></a>
+	    		    <a href="#"><img src="img/weibo.png"/></a>
+	    			<a href="#"><img src="img/ins.png" /></a>
+	    			<a href="#"><img src="img/facebook.png"/></a>
+	    		</div><br />
+	    		<p class="p2">您也可以让我们联系您</p>
+	    		<input class="text" type="text" placeholder="您的email地址" />
+	    		<button class="send">提交</button>
+	    	</div>
+	    	
+	    	<div class="c2">
+				<br/>
+	    		<h2>@联系我们</h2>
+	    		<hr/>
+	    		<form action="#">
+	    			<p>姓名</p>
+	    			<input class="text xingming" type="text" placeholder="中文" />
+	    			<p>联系方式</p>
+	    			<input class="text tel" type="text" placeholder="电话号码" />
+	    			<p>想说的话</p>
+	    			<textarea class="textare" placeholder="500字以内"></textarea>
+	    			<br/><button class="send">提交</button>
+	    		</form>
+	    	</div>
+	    	<div class="c3">
+				<br/>
+	    		<h2>最新消息</h2><hr />
+	    		<div class="news">
+	    			<p><a href="https://xueshu.baidu.com/usercenter/paper/show?paperid=7a8161cecbdb1b7c25d1da76be5fff5a&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8&site=baike"><img src="img/news1.png" />体质偏寒性,不适合吃寒性,凉性的水果;是热性体质,不适合吃热性,否则易助长体内的热</a></p>
+	    		</div><br />
+	    		<div class="news">
+	    			<p><a href="https://xueshu.baidu.com/usercenter/paper/show?paperid=a760ab5ef1ace93105f47b5b9f331832&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8&site=baike"><img src="img/news2.png" />太空橘柚是通过太空人造卫星在高空引起细胞核裂变而产生的变异品种</a></p>
+	    		</div><br />
+	    		<div class="news">
+	    			<p><a href="https://xueshu.baidu.com/usercenter/paper/show?paperid=99486f81ea1e827b9b58b4f02b4587db&tn=SE_baiduxueshu_c1gjeupa&ie=utf-8&site=baike"><img src="img/news3.png" />黄金球里挤着黄金船,黄金船载满金.金中有甜也有酸."那可是我最爱吃的水果——橙子!</a></p>
+	    		</div><br />
+	    		<button><a href="#">继续观看</a></button>
+	    	</div>
+	    </div>
+	    <!--联系栏开始-->
+	    
 	    
 	    <!--其他水果-->
 	    <div class="otherfruit clearfix">
 	    	<p>&nbsp;&nbsp;其他水果</p>
-	    	<ul>
+			<ul>
 	    		<li><a href="http://www.baidu.com/link?url=wI5M30w7QyFGNoI-kUh9mU9IRvWqmf7SMDa4jZdzHCanroaEX6GroGP148sew_3SkA2pORYhwY07lPOOv9au6TH150xy5yYyfQMH9FcxlCO&wd=&eqid=b60584390000345e000000056072aff0"><img src="img/banana.png"></a></li>
 	    		<li><a href="http://www.baidu.com/link?url=YZ1KTPkPcDw8qsqZ0iOPlMmYxw-vVLJTHA3nTxPsk2ArBARYLMVrT24qpzGHblRw8p5xub5IVfxm1q8e1pPCOtPeARkEstMbM2ijqGMI9Ym&wd=&eqid=f0139b930000181a000000056072b005"><img src="img/blueberry.png"></a></li>
 	    		<li><a href="http://www.baidu.com/link?url=FexEBn1DrbeVy7FD9F6eVYLuT4hLwva7tSXzl1t-41FFLXWxtfqdeNfSnYXvD0lPHcvgNWnoPoiTOOzqbOOvbHM_nhh_Co-nT3NSjaE3JSKTGd1T5Oid-RX6TPjobIlX&wd=&eqid=c2f548e8000014f2000000056072b03c"><img src="img/kiwi.png"></a></li>
