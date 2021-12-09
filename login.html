@@ -5,6 +5,20 @@
 		<title>登陆~</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/page-blog.css" />
+        <script type="text/javascript" >
+             function check() {
+             var a=document.getElementById('username').value;
+             var b=document.getElementById('password').value;
+             var c=document.getElementById('Username').value;
+             var d=document.getElementById('Password').value;
+             if(a!=c)
+                  alert("name error!");
+             else if(b!=d)
+                  alert("password error!");
+             else alert("Welcome!");
+             window.location.href='index.html';
+             }
+        </script>
 	</head>	
 	<body>
 
