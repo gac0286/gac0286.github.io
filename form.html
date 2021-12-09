@@ -11,27 +11,18 @@
 		<script type="text/javascript">
 			window.onload=function(){
 				//删除
-				function shanchu(){
+				shanchu=$(".shanchu").click(function(){
 					$(this).parent().remove();
-				};
-				// //删除
-				// shanchu=$(".shanchu").click(function(){
-				// 	$(this).parent().remove();
-				// });
+				});
 
 				//添加
-				function tianjia(){
+				$(".tianjia").click(function(){
 					$(this).parent().parent().parent().siblings("table").html($(this).parent().parent().parent().siblings("table").html()+"<tr><td class=\"name111\">"+$(".name111 input").val()+"</td><td class=\"tel111\">"+$(".tel111 input").val()+"</td><td class=\"yijian\">"+$(".yijian input").val()+"</td><td class=\"shanchu\"><button type=\"button\">删除</button></td></tr>");
 					$(this).siblings("td").children().val("");
-					//$(this).parent().parent().siblings('table').last('tr').children('.shanchu').attr('onclick','shanchu()');
-				}
-				// $(".tianjia").click(function(){
-				// 	$(this).parent().parent().parent().siblings("table").html($(this).parent().parent().parent().siblings("table").html()+"<tr><td class=\"name111\">"+$(".name111 input").val()+"</td><td class=\"tel111\">"+$(".tel111 input").val()+"</td><td class=\"yijian\">"+$(".yijian input").val()+"</td><td class=\"shanchu\"><button type=\"button\">删除</button></td></tr>");
-				// 	$(this).siblings("td").children().val("");
 					// $(this).parent().parent().siblings('table').last('tr').children('.shanchu').click(function(){
 						
 					// });
-				// });
+				});
 				
 			};
 			
@@ -74,7 +65,7 @@
 					<td class="name111">Katherine</td>
 					<td class="tel111">13860666600</td>
 					<td class="yijian">继续努力</td>
-					<td class="shanchu"><button onclick='shanchu()' type="button" >删除</button></td>
+					<td class="shanchu"><button  type="button" >删除</button></td>
 				</tr>
 				
 			</table>
@@ -84,7 +75,7 @@
 					<td class="name111"><input type="text"  placeholder="请输入姓名" /></td>
 					<td class="tel111"><input type="text"  placeholder="请输入联系方式" /></td>
 					<td class="yijian"><input type="text"  placeholder="请输入意见" /></td>
-					<td class="tianjia"><button onclick='tianjia()' type="button" id="tianjia">添加</button></td>
+					<td class="tianjia"><button type="button" id="tianjia">添加</button></td>
 				</tr>
 			</table> 
 			
