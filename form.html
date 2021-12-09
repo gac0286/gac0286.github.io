@@ -21,7 +21,9 @@
 				$(".tianjia").click(function(){
 					$(this).parent().parent().parent().siblings("table").html($(this).parent().parent().parent().siblings("table").html()+"<tr><td class=\"name111\">"+$(".name111 input").val()+"</td><td class=\"tel111\">"+$(".tel111 input").val()+"</td><td class=\"yijian\">"+$(".yijian input").val()+"</td><td class=\"shanchu\"><button type=\"button\">删除</button></td></tr>");
 					$(this).siblings("td").children().val("");
-					
+					$(this).parent().parent().siblings('table').last('tr').children('.shanchu').click(function(){
+						$(this).parent().remove();
+					});
 				});
 				
 			};
