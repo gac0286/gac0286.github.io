@@ -7,16 +7,16 @@
 		<link rel="stylesheet" href="css/page-blog.css" />
         <script type="text/javascript" >
              function check() {
-             var a=document.getElementById('username').value;
-             var b=document.getElementById('password').value;
-             var c=document.getElementById('Username').value;
-             var d=document.getElementById('Password').value;
-             if(a!=c)
-                  alert("name error!");
-             else if(b!=d)
-                  alert("password error!");
-             else alert("Welcome!");
-             window.location.href='index.html';
+                 var a=document.getElementById('username').value;
+                 var b=document.getElementById('password').value;
+                 var c=document.getElementById('Username').value;
+                 var d=document.getElementById('Password').value;
+                 if(a!=c)
+                      alert("name error!");
+                 else if(b!=d)
+                      alert("password error!");
+                 else alert("Welcome!");
+                 window.location.href='index.html';
              }
         </script>
 	</head>	
@@ -26,14 +26,17 @@
             <h1>log in</p><br/>  
                 <div>
                     <h2>name</h2>
-                    <input type="text" placeholder="请输入登入名"> <br/> 
+                    <input type="text" id="username" placeholder="请输入登入名"> <br/> 
+                    <input type="hidden" id="Username" value="acacacac">
                     <h2>password</h2>
-                    <input type="text" placeholder="请输入密码"> <br/> <br/> 
-                    <button id="log"><a href="https://gac0286.github.io/index.html">登陆</a></button>
+                    <input type="text" id="password" placeholder="请输入密码"> <br/> <br/> 
+                    <input type="hidden" id="Password" value="123"></td>
+                    <button onclick='check()' id="log">登陆</a></button>
                 </div>
             
         </div>
-	    
+	
+
 	 
 	</body>
 </html>
