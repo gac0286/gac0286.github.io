@@ -194,7 +194,7 @@ table {
 .send{
 	margin-top:10px ;
 }
-.c2 p{
+.c2 p,#a12345{
 	color: grey;
 	margin-top:20px ;
 	margin-bottom: 5px;
@@ -369,7 +369,7 @@ td input{
 	font-size: 20px;
 	text-align: center;
 }
-#login111 h2{
+#login111 h2,#index123{
 	font-size: 16px;
 	text-align: center;
 }
