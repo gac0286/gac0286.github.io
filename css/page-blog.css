@@ -372,6 +372,9 @@ td input{
 #login111 h2,#index123{
 	font-size: 16px;
 	text-align: center;
+} 
+#index123 input{
+	size: 10px;
 }
 #login111 {
 	height: 500px;
