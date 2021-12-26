@@ -22,6 +22,11 @@ body{
 	height: 20px;
 	background-color: sandybrown;
 }
+#bannerend{
+	width: 1000px;
+	height: 40px;
+	background-image: linear-gradient(sandybrown,#FFDEAD);
+}
 
 /*顶部导航栏总设计开始*/
 .top{
@@ -29,6 +34,7 @@ body{
 	height: 100px;
 	background-color: white;	
 	color: orange;
+	
 }
 /*顶部导航栏总设计结束*/
 
@@ -39,6 +45,7 @@ body{
 	font-size: 30px;
 	padding: 0 20px;
 	float: left;
+	
 }
 /*顶部导航栏左侧头部设计结束*/
 
@@ -50,6 +57,7 @@ body{
 	padding:10px 0px;
 	padding-top: 40px;
 	list-style: none;
+	
 }
 .nav li{
 	border-left:1px gainsboro dotted ;
@@ -292,7 +300,7 @@ ul{
 /*设置底部*/
 .bottom{
 	width: 1000px;
-	height: 80px;
+	height: 100px;
 	background-color: sandybrown;
 	border-top: 1px solid black;
 }

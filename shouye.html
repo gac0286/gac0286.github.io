@@ -15,6 +15,26 @@
 					var textare=document.getElementById("textare");
 					//string url = "file:///C:/Users/86138/Desktop/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/blog/%E6%84%8F%E8%A7%81.html";
 				}
+				on_load=function(){
+					var xhr;
+					if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+						xhr = new XMLHttpRequest();
+					}
+					else {// code for IE6, IE5
+						xhr = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+
+					xhr.onreadystatechange = function () {
+						if (xhr.readyState == 4 && xhr.status == 200) {
+
+							console.log(xhr.responseText);
+							document.getElementById("myDiv").innerHTML = xhr.responseText;
+
+						}
+					}
+					xhr.open("POST", "ajax1.php", true);
+					xhr.send();
+				}
 			}
 		</script>
 		
@@ -51,7 +71,7 @@
 			<img src="img/banner.JPG" class="banner2"/>
 		</div>
 		<!--banner结束-->
-		<div class="t"></div>
+		<div  id="bannerend"></div>
 		
 	    
 	    <!--联系栏开始-->
@@ -70,7 +90,7 @@
 	    		</div><br />
 	    		<p class="p2">您也可以让我们联系您</p>
 	    		<input class="text" type="text" placeholder="您的email地址" />
-	    		<button class="send">提交</button>
+	    		<button class="send" onclick="on_load()">提交</button>
 	    	</div>
 	    	
 	    	<div class="c2">
