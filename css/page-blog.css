@@ -49,6 +49,7 @@ body{
 	height:50px;
 	padding:10px 0px;
 	padding-top: 40px;
+	list-style: none;
 }
 .nav li{
 	border-left:1px gainsboro dotted ;
@@ -161,7 +162,7 @@ body{
 }
 table{
 	border-spacing: 5px 5px;
-	line-height: 55px;
+	line-height: 40px;
     /* border-collapse：sepeated; */
 }
 table td{
@@ -178,18 +179,21 @@ table {
 	margin-top: 20px;
 	background-color: cornsilk;
 	width: 1000px;
-	height:440px;
+	height:540px;
 }
 .contact .c1,.contact .c2,.contact .c3{
 	float:left;
 	width: 310px;
-	height: 400px;
+	height: 540px;
 	border: solid 2px orange;
 	margin: 0 9px;
 	background-color: seashell;
 }
-.c2 .text,.c2 p,.c2 .textare,.send{
+.c2 .text,.c2 p,.c2 .textare,.send,.c2 select{
 	margin-left: 30px;
+}
+ul{
+	list-style: none;
 }
 .send{
 	margin-top:10px ;
@@ -199,7 +203,7 @@ table {
 	margin-top:20px ;
 	margin-bottom: 5px;
 }
-.c2 .text,.c2 .textare{
+.c2 .text,.c2 .textare,.c2 select{
 	padding: 5px 5px;
 }
 .textare{
@@ -214,7 +218,7 @@ table {
 	color: grey;
 	font: "微软雅黑";
 	margin-top: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .lianxi{
 	padding-left: 12px;
@@ -250,7 +254,7 @@ table {
 }
 .c3 p{
 	font-size: 12px;
-	line-height:30px;
+	line-height:45px;
 	font: "微软雅黑";
 }
 .c3 a{
@@ -338,7 +342,7 @@ td input{
 	font-family:微软雅黑;
 	font-size: 35px;
 	text-align: center;
-	float: left;
+	
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -351,7 +355,7 @@ td input{
 }
 
 #cuttom table{
-	margin-left: 238px;
+	margin-left: 225px;
 	margin-top: 10px;
 }
 #cuttom input{
@@ -369,13 +373,11 @@ td input{
 	font-size: 20px;
 	text-align: center;
 }
-#login111 h2,#index123{
+#login111 h2{
 	font-size: 16px;
 	text-align: center;
-} 
-#index123 input{
-	size: 10px;
 }
+
 #login111 {
 	height: 500px;
 	width: 100px;
