@@ -34,6 +34,65 @@
 					xhr.open("POST", "ajax1.php", true);
 					xhr.send();
 				}
+
+				//设置imgList的宽度
+				var imgList=document.getElementById("imgList");
+				var imgArr=document.getElementsByTagName("img");
+				imgList.style.width=imgArr.length*120+"px";
+				
+				//设置导航按钮的居中
+				var navDiv=document.getElementById("navDiv");
+				navDiv.style.left=(outer.offsetWidth-navDiv.offsetWidth)/2+"px";
+				
+				//默认开始显示第一张图的导航索引是深色
+				var index=0;
+				//获取所有的a
+				var allA=document.getElementsByTagName("a");
+				allA[index].style.backgroundColor="black"
+				
+				var timer;
+				//为所有的超链接绑定单击相应函数
+				for(var i=0;i<allA.length;i++){
+					allA[i].num=i;
+					allA[i].onclick=function(){
+						clearInterval(timer);
+						index=this.num;
+						//imgList.style.left=-index*120+"px";
+						setA();
+						//使用move函数切换图片
+						move(imgList,"left",-120*index,20,autoChange());
+					}
+				}
+								
+				
+				//创建一个方法设置选中的a
+				function setA(){
+					
+					//将所有a设置为初始颜色
+					for(var i=0;i<allA.length;i++){
+						allA[i].style.backgroundColor="";
+					}
+					
+					//将选中的a设置为深色
+					allA[index].style.backgroundColor="black";
+				}
+				
+				//创建一个函数自动切换图片
+				function autoChange(){
+					var i=0;
+					timer=setInterval(function(){
+						//使索引自增
+						index++;
+						if(index==imgArr.length){
+							index=0;
+						}
+						//执行动画
+						move(imgList,"left",-120*index,20);
+						setA();
+					},2000);
+				}
+				
+				autoChange();
 			}
 		</script>
 		
@@ -162,5 +221,20 @@
 	     </div>
 	    <!--底部设计结束-->
 	    </div>
+		<div id="outer">
+			<ul id="imgList">
+				<li><img src="img/01.jpg" /></li>
+				<li><img src="img/02.jpg" /></li>
+				<li><img src="img/03.jpg" /></li>
+				<li><img src="img/04.jpg" /></li>
+			</ul>
+			<!--创建导航按钮-->
+			<div id="navDiv">
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+		</div>
 	</body>
 </html>

@@ -408,3 +408,43 @@ td input{
         background-color:lightblue;
     }
 }
+
+
+
+#outer{
+	width: 120px;
+	height: 100px;
+	margin: 50px auto;
+	background-color: beige;
+	padding: 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+#imgList{
+	list-style: none;
+	/*width: 500px;*/
+	position: absolute;
+	left:0;
+}
+#imgList li{
+	float: left;
+	margin: 0 10px;
+}
+#navDiv{
+	position: absolute;
+	bottom: 12px;
+	
+}
+#navDiv a{
+	float: left;
+	width: 6px;
+	height: 6px;
+	background-color: #A9A9A9;
+	margin: 0 2px;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+}
+/*设置鼠标移入效果*/
+#navDiv a:hover{
+	background-color: #808080;
+}
